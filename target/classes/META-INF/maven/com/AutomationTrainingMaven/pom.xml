@@ -20,6 +20,14 @@
 			<version>5.2.0</version>
 		</dependency>
 
+		<!-- selenium-java for web automation-->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.26.0</version>
+		</dependency>
+
+
 	</dependencies>
 
 	<build>
