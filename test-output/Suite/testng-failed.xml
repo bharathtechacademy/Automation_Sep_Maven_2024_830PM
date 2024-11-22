@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="www.abc-bank.com"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="framework.concepts.TestNGTestMethods">
+        <methods>
+          <include name="stopReporting"/>
+          <include name="closeBrowser"/>
+          <include name="verifyLogoAndCaption"/>
+          <include name="startReporting"/>
+          <include name="verifyContactInformation"/>
+          <include name="launchBrowserAndLaunchApplication"/>
+        </methods>
+      </class> <!-- framework.concepts.TestNGTestMethods -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
