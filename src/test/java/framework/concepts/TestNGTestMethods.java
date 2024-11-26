@@ -18,8 +18,9 @@ public class TestNGTestMethods extends TestNGCommonMethods{
 		
 	}
 	
-	@Test(dataProvider="loginData",priority=1,groups= {"regression"},enabled=false)
+	@Test(dataProvider="loginData",priority=1,groups= {"regression"},enabled=true, retryAnalyzer=RetryTest.class)
 	public void verifyLogin(String username, String password){
+		Assert.fail("Login Failed...");
 		System.out.println("Enter username as : "+username);
 		System.out.println("Enter password as : "+password);
 		System.out.println("Click on Login button");
